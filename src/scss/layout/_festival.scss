@@ -1,0 +1,21 @@
+.resumen {
+  padding: $separacion 0;
+  @include tablet {
+    @include grid(2, $separacion);
+  }
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2 {
+    font-size: 3rem;
+  }
+  .fecha {
+    color: $rosa;
+  }
+  .texto {
+    line-height: 1.5;
+  }
+}
